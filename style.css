@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f1f1f1;
+    font-family: 'Nunito', sans-serif;
+}
+
+.giris {
+    text-align: center;
+    width: 350px;
+    box-sizing: border-box;
+    padding: 40px;
+    background: #fff;
+}
+
+.giris h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.giris .ekran {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.giris .ekran input {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+.giris .ekran span{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    padding: 0;
+    transition: 0.5s;
+    pointer-events: none;
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.giris .ekran input:focus ~ span,
+.giris .ekran input:valid ~ span {
+    top: -12px;
+    left: 12px;
+    font-size: 12px;
+    padding: 2px 4px;
+    border: 1px solid #000;
+    background: #f1f1f1;
+}
+
+.giris .ekran input[type="submit"]{
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.giris .ekran input[type="submit"]:hover{
+    background-color: #555;
+    color: white;
+}
+
+.giris a {
+    color: #262626;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: #666;
+}
+
+.giris a span{
+    color: #262626;
+    font-weight: 600;
+}
